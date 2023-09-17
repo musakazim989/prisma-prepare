@@ -1,0 +1,26 @@
+From the begining - it is a freash start with prisma and sqlite
+
+step-1: 
+
+    pnpm init
+
+    pnpm exec tsc --init
+
+    pnpm install prisma --save-dev
+
+    pnpm exec prisma init --datasource-provider sqlite
+
+step-2:
+
+    Write the model with following the prisma roules and complete some of schema as needed.
+
+    After complete the model run migration to create database.
+
+    pnpm exec prisma migrate dev --name init
+
+step-3:
+
+    Expecute the code and show the output in console.
+
+    pnpm exec ts-node index.ts
+
